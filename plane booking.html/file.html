@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plane Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to AfriTrans Airlines</h1>
+  </header>
+
+  <!-- Navigation Tabs -->
+  <div class="tabs">
+    <button class="tab" onclick="openTab('book')">Book Flight</button>
+    <button class="tab" onclick="openTab('gallery')">Flight Gallery</button>
+    <button class="tab" onclick="openTab('about')">About Us</button>
+  </div>
+
+  <!-- Booking Form -->
+  <div id="book" class="tab-content">
+    <h2>Book Your Flight</h2>
+    <form id="bookingForm">
+      <label for="fullName">Full Name:</label>
+      <input type="text" id="fullName" name="fullName" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="flightDate">Flight Date:</label>
+      <input type="date" id="flightDate" name="flightDate" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <span id="passwordFeedback"></span>
+
+      <button type="submit">Book Flight</button>
+    </form>
+  </div>
+
+  <!-- Flight Gallery -->
+  <div id="gallery" class="tab-content">
+    <h2>Flight Gallery</h2>
+    <div class="image-gallery">
+      <img src="https://images.pexels.com/photos/5313876/pexels-photo-5313876.jpeg?cs=srgb&dl=pexels-kokorevas-5313876.jpg&fm=jpghttps://via.placeholder.com/300x200" alt="Flight 1">
+      <img src="https://images.pexels.com/photos/90288/pexels-photo-90288.jpeg?cs=srgb&dl=pexels-chaikong2511-90288.jpg&fm=jpg" alt="Flight 2">
+      <img src="https://images.pexels.com/photos/7276734/pexels-photo-7276734.jpeg?cs=srgb&dl=pexels-rachel-claire-7276734.jpg&fm=jpg" alt="Flight 3">
+    </div>
+  </div>
+
+  <!-- About Us -->
+  <div id="about" class="tab-content">
+    <h2>About AfriTrans Airlines</h2>
+    <p>We are a premium airline offering great customer service and affordable prices.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
